@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rotate and Render Text with HTML5 SVG</title>
+    <style>
+        svg {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="300" height="200">
+        <text x="30" y="15" style="fill:purple; font-size:22px; transform:rotate(30deg);">
+            <tspan style="fill:purple; font-size:22px;">
+                Welcome to Our Website!
+            </tspan>
+            <tspan dx="-230" dy="20" style="fill:navy; font-size:14px;">
+                Here you will find lots of useful information.
+            </tspan>
+        </text>
+    </svg>
+    <!-- section.blogs>article.blog*5>h3{My Blog-$}+p>lorem50 -->
+    <!-- section.blogs>article.blog*5>h3{My Blog-$}+p>lorem50+p>lorem20 -->
+    <!-- section.blogs>article.blog*5>h3{My Blog-$}+p>lorem50^p>lorem20 -->
+    <!-- .album*3>h3+p -->
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+h3 {
+    color: red;
+    background-color: aqua;
+    width: 80%;
+    text-align: center;
+    height: 2em;
+    font-weight: 300;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

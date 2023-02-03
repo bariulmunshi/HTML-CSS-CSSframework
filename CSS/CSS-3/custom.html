@@ -1,0 +1,57 @@
+<!-- note(theory) -->
+custom CSS{var(--root name can be any css style)}
+calac(100%-200px)
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom</title>
+    <style>
+        :root {
+            --primary-color: green;
+            --secondary-color: red;
+            --single-border: 2px solid blue;
+        }
+
+        h1 {
+            color: var(--primary-color)
+        }
+
+        #heading-3 {
+            border: 2px solid var(--primary-color);
+        }
+
+        p {
+            border-bottom: var(--single-border)
+        }
+
+        .box {
+            background-color: var(--primary-color);
+            width: calc(100% - 500px);
+            height: 100px;
+        }
+
+        .pond {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading" id="heading-1">My strong heading-1</h1>
+    <h1 class="heading" id="heading-2">My strong heading-2</h1>
+    <h1 class="heading" id="heading-3">My strong heading-3</h1>
+    <h1 class="heading" id="heading-4">My strong heading-4</h1>
+    <p>My simgle talk</p>
+    <div class="box">
+        hello
+    </div>
+    <div class="pond">
+        <p>ami timia amedkkjd</p>
+    </div>
+</body>
+
+</html>

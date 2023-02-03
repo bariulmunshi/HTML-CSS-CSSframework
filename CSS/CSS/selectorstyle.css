@@ -1,0 +1,20 @@
+h3 {
+    color: rgb(160, 62, 62);
+    text-align: center;
+}
+
+#question {
+    color: red;
+    text-align: right;
+}
+
+.hi {
+    color: rgb(110, 65, 10);
+}
+
+* {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: aqua;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
