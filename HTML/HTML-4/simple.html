@@ -13,6 +13,25 @@ img tag{ src /3 ways declare image(1.online, 2.local, 3.folder) <br>
     <title>simple-html</title>
     <!-- favicon(tab bar image icon of browser,use in head tag link) -->
     <link rel="shortcut icon" href="needr.png" type="image/x-icon">
+    <style>
+        /* style for table */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid lightgray;
+            padding: 5px 15px;
+
+        }
+        /* style for form */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <hr>
@@ -91,7 +110,76 @@ img tag{ src /3 ways declare image(1.online, 2.local, 3.folder) <br>
     <img src="girl.jpg" alt="girls in jacket" height="150px" width="100px">
      <!-- folder -->
     <img src="images/girl.jpg" height="100" width="100" alt="girls in a jacket">
+    <h1>This is learning Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Stev Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+    </table>
 
+
+    <h1>This is form Learning</h1>
+    <!-- Normal Login -->
+    <form>
+        <label for="">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lanme">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br> 
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <!-- login --> 
+    <form>
+        <input type="text" placeholder="Your Email Address"> <br>
+        <input type="password" placeholder="Your password"> <br> 
+        <input type="reset" value="reset">
+        <input type="submit" value="Login">
+    </form> 
+    <br>
+    <!-- MCQ option select -->
+    <form>
+        <label>Which one is the third person singular number</label> <br>
+        <input type="radio">
+        <label>She</label><br>
+        <input type="radio">
+        <label>They</label><br>
+        <input type="radio">
+        <label>I</label><br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form> 
+    <br>
     <!-- form making(form tag,input,textarea,placeholder) -->
     <form>
         <input type="text" name="" id="" placeholder="Your Name:"> 
@@ -104,6 +192,69 @@ img tag{ src /3 ways declare image(1.online, 2.local, 3.folder) <br>
     <br> 
     <input class="btn-primary" type="submit" value="submit">
 </form>
+<br>
+ <!-- Use of label,select,option,button tag -->
+ <form>
+    <label for="phones">Choose a phone:
+        <select name="phone" id="phones">
+            <option value="realme">realme xt</option>
+            <option value="vivo">Vivo y2</option>
+            <option value="Samsung">Samsung M2</option>
+            <option value="Xiaomi">Xiaomi note 12 pro max</option>
+            <input type="reset" value="reset">
+            <button>Submt</button>
+        </select>
+    </label>
+</form>
+<br>
+<h2>Welcome to my Gift-combo-tech shop</h2>
+    <form>
+        <label for="name">Your name
+            <input id="name" type="text" placeholder="Your name">
+        </label>
+        <label for="email">Your email
+            <input id="email" type="email" placeholder="Your email">
+        </label>
+        <label for="phone">Your phone number
+            <input id="phone" type="phone" placeholder="Your phone number">
+        </label>
+        <fieldset>
+            <legend>pick one option</legend>
+            <label for="samsung">
+                <input type="radio" name="phone" id="samsung">
+                samsung
+            </label>
+            <label for="Xiaomi">
+                <input type="radio" name="phone" id="Xiaomi">
+                Xiaomi
+            </label>
+            <label for="Realme">
+                <input type="radio" name="phone" id="Realme">
+                Realme
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select one or more option</legend>
+            <label for="HP">
+                <input type="checkbox" name="laptop" id="HP">
+                HP
+            </label>
+            <label for="Realme">
+                <input type="checkbox" name="laptop" id="Realme">
+                Realme
+            </label>
+            <label for="Acer">
+                <input type="checkbox" name="laptop" id="Acer">
+                Acer
+            </label>
+        </fieldset>
+        <fieldset>
+            <Legend>comment</Legend>
+            <textarea name="" id="" cols="60" rows="5"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
 </body>
 
 </html>
