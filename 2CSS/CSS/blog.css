@@ -1,0 +1,29 @@
+.header {
+    height: 700px;
+    text-align: center;
+    color: whitesmoke;
+    /* background-image: url(bari.jpeg); */
+    /* background-image: url(../stone_nature.jpg); */
+    /* background-image: url(../images/cap.png); */
+    background-image: url(../VARSITY.jpeg);
+    background-color: rgb(196, 158, 158);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+* {
+    margin: 0%;
+}
+
+h2 {
+    color: magenta;
+}
+
+p {
+    color: blueviolet;
+}
+
+.page-title {
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,394 @@
+<!-------------note(theory)------------->
+html simple tag{heading,paragraph,bold,italic,strong(important text),
+hr(separate content),small(decrease-size from x-large to large or medium to small),anchor(href,target)}
+attribute{additional information about elements}
+Learning list tag(two types of list)
+img tag{ src /3 ways declare image(1.online, 2.local, 3.folder) <br>
+    alt(alternative view if user can't see of loading) <br>
+    width and height(avoidance flicker during loading or see specfic size)} px(pixel)
+    favicon(tab bar image icon of browser,use in head tag link)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>simple-html</title>
+    <!-- favicon(tab bar image icon of browser,use in head tag link) -->
+    <link rel="shortcut icon" href="needr.png" type="image/x-icon">
+    <style>
+        /* style for table */
+        /* simple table-1 */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td,
+        th {
+            border: 1px solid lightgray;
+            padding: 5px 15px;
+
+        }
+        /* simple table-2 */
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            padding: 5px 10px;
+        }
+        h3{
+            text-align: center;
+        }
+        .lab{
+            background-color: antiquewhite;
+        }
+        .counseling-hour{
+            background-color: rgb(202, 170, 232);
+        }
+        .off-day{
+            padding: 10px 0px;
+            background-color: aqua;
+        }
+        /* style for form */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <!-- example from personal website -->
+    <h1>Hi, I am Bariul</h1>
+    <h2>
+        <!-- small(decrease-size from x-large to large or medium to small) -->
+        Web developer and <small>and</small> Trainer
+    </h2>
+    <!-- example form w3 school -->
+    <h3 style="text-align: center;">This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <hr>
+    <!-- example from any website -->
+    <p style="text-align: center;">This is <b>Bariul</b> and I am going to training student
+        and <i>many more.</i> Here <strong>I am ready to tech you.</strong> <small>so you have ready for this</small>
+    </p>
+    <!-- use for separte content -->
+    <hr style="width: 300px ; height: 5px; background: #239746;">
+    <p >This is <b>Bariul</b></p>
+    <p style="text-align: center;"><i>This text is italic</i></p>
+    <p style="text-align: center;"><strong>This text is strong that's means it's important</strong></p>
+ 
+    <!-- Use of anchor tag(href,target) -->
+    <a  href="https://www.youtube.com/channel/UCw9RcOYx_8i1wgFWIawLLpQ/videos" target="_blank"> subscribe my channel </a>
+    <p style="text-align: center;"><a style="text-decoration: none;" href="https://youtu.be/k1l4wOtIISk">What's ChatGPT,Please click?</a></p>
+
+     <!-- Two types of list & there have diffent type of order and unorder style -->
+     <h2>Unordered list</h2>
+     <!-- Disc by default -->
+     <ul >
+         <li>shakib</li>
+         <li>Sabbir</li>
+         <li>Nasir</li>
+         <li>Rakibul</li>
+         <li>Jony</li>
+     </ul>
+     <!-- circle -->
+     <ul style="list-style-type: circle;">
+         <li>circle list</li>
+         <li>circle list</li>
+         <li>circle list</li>
+     </ul>
+     <!-- Square -->
+     <ul style="list-style-type: square;">
+         <li>This is square List</li>
+         <li>This is square List</li>
+         <li>This is square List</li>
+     </ul>
+     <!-- none -->
+     <ul style="list-style-type: none;">
+         <li>This is none list</li>
+         <li>This is none list</li>
+         <li>This is none list</li>
+     </ul>
+     <h2>ordered list</h2>
+     <ol>
+         <li>shakib</li>
+         <li>Sabbir</li>
+         <li>Nasir</li>
+         <li>Rakibul</li>
+         <li>Jony</li>
+     </ol>
+     <ol type="I"> 
+         <li>This is a list</li>
+         <li>This is a list</li>
+         <li>This is a list</li>
+     </ol>
+
+     <!-- src /3 ways declare image(1.online, 2.local, 3.folder -->
+     <!-- online -->
+     <img src="https://scontent.fdac136-1.fna.fbcdn.net/v/t39.30808-6/324872567_1134242523940536_2147214756062163979_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeExpwbYI9HeO4qnjSNgfvR-FSjiimNJxCgVKOKKY0nEKNKsTk-armq19BWONkzyorP5XYc9sleMUGJqBi3FeMX7&_nc_ohc=LJtZAFtPeI0AX-9fPjc&_nc_ht=scontent.fdac136-1.fna&oh=00_AfDZwCaaRAhG7HF6jqvWc-OA53x9H6Kvn3G9Dl_GLWq_4w&oe=63E3B680" alt="Bariul" width="200px" height="250px">
+     <!-- local -->
+    <img src="girl.jpg" alt="girls in jacket" height="150px" width="100px">
+     <!-- folder -->
+    <img src="images/girl.jpg" height="100" width="100" alt="girls in a jacket">
+
+    <!-- Simple table-1-->
+    <h1>This is learning Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Stev Jobs</td>
+                <td>Founder Apple</td>
+                <td>$1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>Founder Google</td>
+                <td>$1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>Founder Facebook</td>
+                <td>$1300</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Simple table-2 -->
+    <h3> <u>Personal Routine & Counseling Hour</u></h3> 
+    <table>
+        <tr>
+          <td></td>
+          <td>08:30-09:30 </td>
+          <td>09:30-10:30</td>
+          <td>10:30-11:30</td>
+          <td>11:30-12:30</td>
+          <td>12:30-01:30</td>
+          <td>01:30-02:30</td>
+          <td>02:30-03:30</td>
+          <td>03:30-04:30</td>
+          <td>04:30-05:30</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td class="counseling-hour">Counseling <br>
+            hour</td>
+          <td></td>
+          <td>CSE414 <br>
+            (PC-R) <br>
+            Room: 302 <br></td>
+          <td class="lab" colspan="3">CSE415 <br>
+            (PC-K) <br>
+            Room: 812 <br></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td></td>
+          <td></td>
+          <td class="counseling-hour">Counseling <br>
+            hour</td>
+          <td class="counseling-hour">Counseling <br>
+            hour</td>
+          <td></td>
+          <td></td>
+          <td class="lab" colspan="3">CSE415  <br>
+            (PC-L) <br>
+            Room: 514 <br></td>
+          
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="lab" colspan="3">CSE415 <br>
+            (PC-R) <br>
+            Room:813A <br></td>
+          
+          <td></td>
+          <td>CSE414 <br>
+            (PC-L) <br>
+            Room: 224 <br></td>
+          <td class="counseling-hour" class="counseling-hour">Counseling <br>
+            hour</td>
+        </tr>
+        <tr>
+          <td >Tuesday</td>
+          <td class="off-day" colspan="9">Off Day   </td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="counseling-hour" class="counseling-hour">Counseling <br> 
+            hour</td>
+          <td class="counseling-hour" class="counseling-hour">Counseling <br>
+            hour</td>
+            <td></td>
+          <td class="lab" colspan="3">CSE415 <br>
+            (PC-I) <br>
+            Room: 518 <br></td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="counseling-hour">Counseling <br>
+            hour</td>
+          <td></td>
+          <td>CSE414 <br>
+            (PC-I) <br>
+            Room: 803 <br></td>
+          <td></td>
+          <td>CSE414 <br>
+            (PC-K) <br>
+            Room: 1404 <br>
+            </td>
+          <td class="counseling-hour">Counseling <br>
+            hour</td>
+        </tr>
+        <tr>
+          <td>Friday </td>
+          <td class="off-day" colspan="9">Holiday</td>
+          
+        </tr>
+      </table>
+      <p style="padding-left: 500px;"><small><b> Name: Nusrat Khan <br>
+        Designation: Lecturer <br>
+        Email: nusratkhan.cse@diu.edu.bd <br>
+        Mobile: 01644461629 </b></small></p>
+        <p style="padding-top: 5px; padding-left: 500px;"><b><i> N.B. For long term counseling please send email and Notify at least 24 hours earlier </i></b></p>
+
+
+    <h1>This is form Learning</h1>
+    <!-- Normal Login -->
+    <form>
+        <label for="">First Name:</label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label for="lanme">Last Name:</label><br>
+        <input type="text" name="lname" id="lname"><br> 
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <!-- login --> 
+    <form>
+        <input type="text" placeholder="Your Email Address"> <br>
+        <input type="password" placeholder="Your password"> <br> 
+        <input type="reset" value="reset">
+        <input type="submit" value="Login">
+    </form> 
+    <br>
+    <!-- MCQ option select -->
+    <form>
+        <label>Which one is the third person singular number</label> <br>
+        <input type="radio">
+        <label>She</label><br>
+        <input type="radio">
+        <label>They</label><br>
+        <input type="radio">
+        <label>I</label><br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form> 
+    <br>
+    <!-- form making(form tag,input,textarea,placeholder) -->
+    <form>
+        <input type="text" name="" id="" placeholder="Your Name:"> 
+    <br>
+    <input type="email" name="" id="" placeholder="Your Email:">
+    <br>
+    <input type="number" name="" id="" placeholder="Your Phone:">
+    <br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <br> 
+    <input class="btn-primary" type="submit" value="submit">
+</form>
+<br>
+ <!-- Use of label,select,option,button tag -->
+ <form>
+    <label for="phones">Choose a phone:
+        <select name="phone" id="phones">
+            <option value="realme">realme xt</option>
+            <option value="vivo">Vivo y2</option>
+            <option value="Samsung">Samsung M2</option>
+            <option value="Xiaomi">Xiaomi note 12 pro max</option>
+            <input type="reset" value="reset">
+            <button>Submt</button>
+        </select>
+    </label>
+</form>
+<br>
+<h2>Welcome to my Gift-combo-tech shop</h2>
+    <form>
+        <label for="name">Your name
+            <input id="name" type="text" placeholder="Your name">
+        </label>
+        <label for="email">Your email
+            <input id="email" type="email" placeholder="Your email">
+        </label>
+        <label for="phone">Your phone number
+            <input id="phone" type="phone" placeholder="Your phone number">
+        </label>
+        <fieldset>
+            <legend>pick one option</legend>
+            <label for="samsung">
+                <input type="radio" name="phone" id="samsung">
+                samsung
+            </label>
+            <label for="Xiaomi">
+                <input type="radio" name="phone" id="Xiaomi">
+                Xiaomi
+            </label>
+            <label for="Realme">
+                <input type="radio" name="phone" id="Realme">
+                Realme
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Select one or more option</legend>
+            <label for="HP">
+                <input type="checkbox" name="laptop" id="HP">
+                HP
+            </label>
+            <label for="Realme">
+                <input type="checkbox" name="laptop" id="Realme">
+                Realme
+            </label>
+            <label for="Acer">
+                <input type="checkbox" name="laptop" id="Acer">
+                Acer
+            </label>
+        </fieldset>
+        <fieldset>
+            <Legend>comment</Legend>
+            <textarea name="" id="" cols="60" rows="5"></textarea>
+        </fieldset>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
