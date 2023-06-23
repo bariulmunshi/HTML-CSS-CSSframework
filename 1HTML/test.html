@@ -1,23 +1,122 @@
 <html>
-  <head>
-    <title>My first HTML page</title>
-  </head>
-  <body>
-     <!-- small(decrease-size from x-large to large or medium to small) -->
-    <h1>Hi, 
-      <br>
-      This is Bariul
-      <small>This is Bariul</small></h1>
-    <h2>Hi, This is Bariul</h2>
-    <h3>Hi, This is Bariul</h3>
-    <h4>Hi, This is Bariul</h4>
-    <h5>Hi, This is Bariul</h5>
-    <h6>Hi, This is Bariul</h6>
-    <!-- paragraph tag with Inline CSS -->
-    <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at, perferendis consequatur tenetur deleniti magni numquam eligendi aliquid nisi laborum nam quibusdam nostrum vel id nemo repudiandae. Voluptas, deleniti nobis.</p>
-    <hr style="width: 300px ; height: 5px; background: #000;">
-    
-
-
-  </body>
+<head>
+  <title>Table</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    table, td{
+      border: 1px solid gray;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .counseling-hour{
+  background-color: rgb(202, 170, 232);
+}
+  </style>
+</head>
+<body>
+  <table>
+    <!-- raw-1 -->
+    <tr>  
+      <td></td>
+      <td>08:30-09:30</td>
+      <td>09:30-10:30</td>
+      <td>10:30-11:30</td>
+      <td>11:30-12:30</td>
+      <td>12:30-01:30</td>
+      <td>01:30-02:30</td>
+      <td>02:30-03:30</td>
+      <td>03:30-04:30</td>
+      <td>04:30-05:30</td>
+    </tr>
+    <!-- raw-2 -->
+    <tr>
+      <td>Saturday</td>
+      <td class="counseling-hour">Counseling <br>
+        hour</td>
+      <td></td>
+      <td>CSE414 <br>
+        (PC-R) <br>
+        Room: 302 <br></td>
+      <td class="lab" colspan="3">CSE415 <br>
+        (PC-K) <br>
+        Room: 812 <br></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sunday</td>
+      <td></td>
+      <td></td>
+      <td class="counseling-hour">Counseling <br>
+        hour</td>
+      <td class="counseling-hour">Counseling <br>
+        hour</td>
+      <td></td>
+      <td></td>
+      <td class="lab" colspan="3">CSE415  <br>
+        (PC-L) <br>
+        Room: 514 <br></td>
+      
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="lab" colspan="3">CSE415 <br>
+        (PC-R) <br>
+        Room:813A <br></td>
+      
+      <td></td>
+      <td>CSE414 <br>
+        (PC-L) <br>
+        Room: 224 <br></td>
+      <td class="counseling-hour" class="counseling-hour">Counseling <br>
+        hour</td>
+    </tr>
+    <tr>
+      <td >Tuesday</td>
+      <td class="off-day" colspan="9">Off Day   </td>
+    </tr>
+    <tr>
+      <td>Wednesday</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="counseling-hour" class="counseling-hour">Counseling <br> 
+        hour</td>
+      <td class="counseling-hour" class="counseling-hour">Counseling <br>
+        hour</td>
+        <td></td>
+      <td class="lab" colspan="3">CSE415 <br>
+        (PC-I) <br>
+        Room: 518 <br></td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="counseling-hour">Counseling <br>
+        hour</td>
+      <td></td>
+      <td>CSE414 <br>
+        (PC-I) <br>
+        Room: 803 <br></td>
+      <td></td>
+      <td>CSE414 <br>
+        (PC-K) <br>
+        Room: 1404 <br>
+        </td>
+      <td class="counseling-hour">Counseling <br>
+        hour</td>
+    </tr>
+    <tr>
+      <td>Friday </td>
+      <td class="off-day" colspan="9">Holiday</td>
+      
+    </tr>
+  </table>
+</body>
 </html>

@@ -1,0 +1,20 @@
+table, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+  padding: 5px 10px;
+}
+h3{
+  text-align: center;
+}
+.counseling-hour{
+  background-color: rgb(202, 170, 232);
+}
+.lab{
+  background-color: antiquewhite;
+}
+.off-day{
+  padding: 10px 0px;
+  background-color: aqua;
+}
